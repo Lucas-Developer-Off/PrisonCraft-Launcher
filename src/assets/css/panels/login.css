@@ -1,0 +1,76 @@
+.login .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login-tabs {
+    position: absolute;
+    padding: 250px 0px 15px;
+    background: none;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 40%;
+}
+
+.login-home {
+    display: none;
+}
+
+.login-text {
+    font-size: 1.3rem;
+}
+
+.connect,
+.cancel {
+    background: #D9D9D9;
+    color: #895322;
+    border: none;
+    border-radius: 10px;
+    padding-top: 6px;
+    font-family: 'Agenor';
+    font-size: 20px;
+    font-weight: 900;
+    margin: 150px 10px 0;
+    width: 220px;
+    height: 60px;
+    text-align: center;
+    box-shadow: 0 4px 0 0 #DC8436;
+    cursor: pointer;
+}
+
+.connect:hover,
+.cancel:hover {
+    background: #B8B8B8;
+}
+
+.input-login .email,
+.input-login .password {
+    color: white;
+    background: #F99741B3;
+    border: none;
+    border-radius: 10px;
+    width: 60%;
+    height: 60px;
+    padding: 0.5rem 1rem 0.4rem;
+    margin-top: 10px;
+    font-family: 'Agenor';
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.input-login input::placeholder {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.logo-img {
+    height: 300px;
+    margin-top: -57%;
+}
+
+.microsoft-link {
+    color: #FAEBD7;
+}

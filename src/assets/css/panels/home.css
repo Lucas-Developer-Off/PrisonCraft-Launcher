@@ -1,0 +1,246 @@
+.home .container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status-server {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #292929;
+    width: 25rem;
+    height: 3rem;
+    color: #F5F5F5;
+    border-radius: 10px;
+    margin-top: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.server-status-icon {
+    height: 3.3rem;
+}
+
+.server-status-name {
+    font-size: 1.5rem;
+    color: #F5F5F5;
+}
+
+.server-status-text {
+    font-size: 0.6rem;
+    color: #1AC707;
+}
+
+.server-status-infos .red {
+    color: #FF0409;
+}
+
+.status-player-count {
+    background: #191919b3;
+    min-width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.player-count {
+    font-size: 1.5rem;
+    margin: 0.4rem 0.5rem;
+}
+
+.status-player-count:after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    right: 10px;
+    border-radius: 15px;
+    border: solid 5px #292929;
+    background: #1AC707;
+}
+
+.red:after {
+    background: #FF0409;
+}
+
+.home-bottom {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 80px - 8rem);
+    display: flex;
+}
+
+.sidebar {
+    width: 91%;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+}
+
+.player-menu {
+    color: #00bd7a;
+    transform: rotate(270deg);
+    pointer-events: none;
+}
+
+.play-elements {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-instance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 0px 0px #DC8436;
+    cursor: pointer;
+    width: 220px;
+    height: 60px;
+    margin-bottom: 44px;
+}
+
+.play-btn {
+    border: none;
+    border-radius: 10px;
+    background: none;
+    color: #895322;
+    padding-top: 6px;
+    font-family: 'Agenor';
+    font-size: 20px;
+    font-weight: 900;
+    pointer-events: none;
+    width: 100%;
+}
+
+.instance-select {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: -3;
+    top: -2;
+    color: #00bd7a;
+    font-size: 1rem;
+    height: calc(100% - 1px);
+    border: solid 3px #00bd7a;
+    text-align: center;
+    border-radius: 15px;
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+.instance-select:before {
+    transform: rotate(270deg);
+    pointer-events: none;
+}
+
+.info-starting-game {
+    display: none;
+    text-align: center;
+    width: 220px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 0px 0px #DC8436;
+    margin-bottom: 44px;
+}
+
+.info-starting-game-text {
+    margin-top: 0.5rem;
+    color: #895322;
+}
+
+.progress-bar {
+    appearance: none;
+    height: 10px;
+    margin: 0.3rem 0;
+}
+
+.progress-bar::-webkit-progress-bar {
+    background-color: #292929;
+    border: solid 1px #DC8436;
+    border-radius: 10px;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: #DC8436;
+    border-radius: 10px;
+}
+
+.settings-btn {
+    width: 70px;
+    height: 70px;
+    font-size: 70;
+    color: #D9D9D9;
+    position: absolute;
+    bottom: 59px;
+    left: 13px;
+    cursor: pointer;
+}
+
+.instance-popup {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #000000b3;
+    z-index: 10;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.instances-tab {
+    position: relative;
+    background: #292929;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+}
+
+.close-popup {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 10px;
+    background: #191919b3;
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.instances-tab p {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+.instance-elements {
+    background: #424242;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.instance-elements:hover {
+    background: #00bd7a;
+}
+
+.active-instance {
+    background: #00bd7a;
+}
