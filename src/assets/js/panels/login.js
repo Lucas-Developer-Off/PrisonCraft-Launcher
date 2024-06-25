@@ -1,6 +1,6 @@
 const { ipcRenderer } = require('electron');
 
-import { popup, database, changePanel, addAccount, config, setStatus } from '../utils.js';
+import { popup, database, changePanel, config, setStatus } from '../utils.js';
 
 class Login {
     static id = "login";
@@ -65,7 +65,6 @@ class Login {
         }
 
         await this.db.updateData('configClient', configClient);
-        await addAccount(account);
         changePanel('home');
     }
 }

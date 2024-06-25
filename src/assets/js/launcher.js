@@ -2,7 +2,7 @@ import Login from './panels/login.js';
 import Home from './panels/home.js';
 import Settings from './panels/settings.js';
 
-import { logger, config, changePanel, database, popup, setBackground, addAccount, pkg } from './utils.js';
+import { logger, config, changePanel, database, popup, setBackground, pkg } from './utils.js';
 const { Microsoft } = require('minecraft-java-core');
 
 const { ipcRenderer } = require('electron');
@@ -144,7 +144,6 @@ class Launcher {
 
                     refresh_accounts.ID = account_ID
                     await this.db.updateData('accounts', refresh_accounts, account_ID)
-                    await addAccount(refresh_accounts)
                 }
             }
 

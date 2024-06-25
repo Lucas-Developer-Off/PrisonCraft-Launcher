@@ -8,7 +8,6 @@ class Home {
     async init(config) {
         this.config = config;
         this.db = new database();
-        this.socialLick()
         this.instancesSelect()
         document.querySelector('.settings-btn').addEventListener('click', e => changePanel('settings'))
     }

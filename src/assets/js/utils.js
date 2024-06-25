@@ -7,7 +7,6 @@ import config from './utils/config.js';
 import database from './utils/database.js';
 import logger from './utils/logger.js';
 import popup from './utils/popup.js';
-import { skin2D } from './utils/skin.js';
 import slider from './utils/slider.js';
 
 async function setBackground() {
@@ -31,11 +30,6 @@ async function changePanel(id) {
 
 async function appdata() {
     return await ipcRenderer.invoke('appData').then(path => path)
-}
-
-async function addAccount(data) {
-    let skin = false
-    if (data?.profile?.skins[0]?.base64) skin = await new skin2D().creatHeadTexture(data.profile.skins[0].base64);
 }
 
 async function setStatus(opt) {
@@ -78,8 +72,6 @@ export {
     logger as logger,
     popup as popup,
     setBackground as setBackground,
-    skin2D as skin2D,
-    addAccount as addAccount,
     slider as Slider,
     pkg as pkg,
     setStatus as setStatus
